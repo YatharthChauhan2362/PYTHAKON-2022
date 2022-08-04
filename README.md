@@ -2,8 +2,6 @@
 
 A National Event Hackathon
 
-# PYTHAKON 2022
-
 Team Name: MIND SIGHT
 
 TEAM MEMBERS:
