@@ -2,13 +2,14 @@
 
 A National Event Hackathon
 
-Team Name: MIND SIGHT
+# Project: File Organization With Automation Using Python
 
-TEAM MEMBERS:
+# Team Name: MIND SIGHT
+
+# TEAM MEMBERS:
+
 Yatharth Chauhan
 
 Mehul Patel
 
 Reeya Thanki
-
-Project: File Organization With Automation Using Python
