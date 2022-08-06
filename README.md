@@ -2,7 +2,13 @@
 
 A National Event Hackathon
 
-# Project: File Organization With Automation Using Python
+# Project:
+
+File Organization With Automation Using Python
+
+File Renaming With Automation Using Python
+
+File Renaming With Automation Using PythonVirtual Voice Assistant Using Python
 
 # Team Name: MIND SIGHT
 
