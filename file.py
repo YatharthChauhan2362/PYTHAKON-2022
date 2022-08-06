@@ -24,7 +24,7 @@ class File_Renamer:
         # Setting the Tkinter main window
         self.window = root
         self.window.geometry("720x500")
-        self.window.title('File Renamer - PySeek')
+        self.window.title('File Renamer')
         self.window.resizable(width=False, height=False)
         self.window.configure(bg='gray90')
 
@@ -305,8 +305,8 @@ class File_Renamer:
 
     # When the 'About' button is pressed, this function gets a call
     def About_Window(self):
-        messagebox.showinfo("File Renamer 22.05",
-                            "Developed by Subhankar Rakshit\n~PySeek")
+        messagebox.showinfo("File Renamer",
+                            "Developed By Team Mind Sight\n~CHARUSAT")
 
     # This function closes the main window
     def Exit_Window(self):
