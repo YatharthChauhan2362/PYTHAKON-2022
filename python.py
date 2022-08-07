@@ -62,12 +62,12 @@ class File_Organizer:
         self.Display_Logo()
 
         About_Btn = Button(self.window, text="About",
-                           font=("Kokila", 10, 'bold'), bg="dodger blue",
+                           font=("Kokila", 10, 'bold'), bg="green",
                            fg="white", width=5, command=self.About_Window)
         About_Btn.place(x=600, y=20)
 
         Exit_Btn = Button(self.window, text="Exit",
-                          font=("Kokila", 10, 'bold'), bg="dodger blue",
+                          font=("Kokila", 10, 'bold'), bg="green",
                           fg="white", width=5, command=self.Exit_Window)
         Exit_Btn.place(x=600, y=60)
 
@@ -79,9 +79,9 @@ class File_Organizer:
 
     def Display_Logo(self):
 
-        image = Image.open('Images/File_Organizer.png')
+        image = Image.open('Images/fo.png')
 
-        resized_image = image.resize((280, 70))
+        resized_image = image.resize((300, 98))
 
         self.img_1 = ImageTk.PhotoImage(resized_image)
 
@@ -94,7 +94,7 @@ class File_Organizer:
         Heading_Label.place(x=160, y=20)
 
         Folder_Button = Button(self.frame_2, text="Select Folder",
-                               font=("Kokila", 10, 'bold'), bg="gold", width=10,
+                               font=("Kokila", 10, 'bold'), bg="white", width=10,
                                command=self.Select_Directory)
         Folder_Button.place(x=130, y=80)
 
@@ -111,7 +111,7 @@ class File_Organizer:
         self.Status_Label.place(x=256, y=130)
 
         Start_Button = Button(self.frame_2, text="Start",
-                              font=("Kokila", 13, 'bold'), bg="dodger blue", fg="white",
+                              font=("Kokila", 13, 'bold'), bg="green", fg="white",
                               width=8, command=self.Organizer)
         Start_Button.place(x=280, y=180)
 
@@ -215,3 +215,4 @@ if __name__ == "__main__":
 
     obj = File_Organizer(root)
     root.mainloop()
+  # Competed

@@ -24,7 +24,7 @@ class File_Renamer:
         # Setting the Tkinter main window
         self.window = root
         self.window.geometry("720x500")
-        self.window.title('File Renamer')
+        self.window.title('File Renamer - ')
         self.window.resizable(width=False, height=False)
         self.window.configure(bg='gray90')
 
@@ -47,13 +47,13 @@ class File_Renamer:
 
         # About Button
         About_Btn = Button(self.window, text="About",
-                           font=("Kokila", 10, 'bold'), bg="dodger blue",
+                           font=("Kokila", 10, 'bold'), bg="green",
                            fg="white", width=5, command=self.About_Window)
         About_Btn.place(x=600, y=20)
 
         # Exit Button
         Exit_Btn = Button(self.window, text="Exit",
-                          font=("Kokila", 10, 'bold'), bg="dodger blue",
+                          font=("Kokila", 10, 'bold'), bg="green",
                           fg="white", width=5, command=self.Exit_Window)
         Exit_Btn.place(x=600, y=60)
 
@@ -69,9 +69,9 @@ class File_Renamer:
     # This function displays the File Renamer Logo
     def Display_Logo(self):
         # Opening the logo image
-        image = Image.open('Images/File_Renamer.png')
+        image = Image.open('Images/fo.png')
         # Resizing the image
-        resized_image = image.resize((280, 70))
+        resized_image = image.resize((280, 98))
         # Create an object of tkinter ImageTk
         self.img_1 = ImageTk.PhotoImage(resized_image)
         # Create a Label Widget to display the text or Image
@@ -96,7 +96,7 @@ class File_Renamer:
         # Button for selecting the directory(where
         # the desired files are presented)
         Folder_Button = Button(self.frame_2, text="Select Folder",
-                               font=("Kokila", 10, 'bold'), bg="gold", width=10,
+                               font=("Kokila", 10, 'bold'), bg="White", width=10,
                                command=self.Select_Directory)
         Folder_Button.place(x=20, y=70)
 
@@ -109,7 +109,7 @@ class File_Renamer:
         # Button for selecting the directory where the
         # renamed file will be stored.
         SaveTo_Button = Button(self.frame_2, text="Save To",
-                               font=("Kokila", 10, 'bold'), bg="green", fg='white',
+                               font=("Kokila", 10, 'bold'), bg="white", fg='black',
                                width=10, command=self.SaveTo_Directory)
         SaveTo_Button.place(x=20, y=125)
 
@@ -143,7 +143,7 @@ class File_Renamer:
         # Start Button: Users have to press this button
         # to start renaming operation
         Start_Button = Button(self.frame_2, text="Start",
-                              font=("Kokila", 13, 'bold'), bg="dodger blue", fg="white",
+                              font=("Kokila", 13, 'bold'), bg="Green", fg="white",
                               width=8, command=self.Threading)
         Start_Button.place(x=120, y=260)
 
@@ -319,3 +319,5 @@ if __name__ == "__main__":
     # Creating a 'File_Renamer' class object
     obj = File_Renamer(root)
     root.mainloop()
+
+    # Competed
